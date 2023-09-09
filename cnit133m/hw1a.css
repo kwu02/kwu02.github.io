@@ -1,0 +1,51 @@
+/* CNIT 133M
+   HW#1a
+   Keli Wu
+   09/08/2023
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+    text-align: center;
+}
+
+.content {
+    padding: 0;
+    max-width: 1200px;
+    font-size: 1em;
+}
+
+p {
+    color: black;
+}
+
+.div1 {
+    padding: 10px;
+    text-align: left;
+}
+
+.p2 {
+    clear: left;
+    /*display:block;*/
+    /*text-align: left;*/
+}
+
+
+figure {
+    float: left;
+    margin-left: 0px;
+}
+
+button {
+    background-color: springgreen;
+    color: black;
+}

@@ -78,8 +78,9 @@ div.sidebar-left a:hover{
 div#footer{
     background-color:#c4d5d9;
     margin:0 auto;
-    text-align:center;
+    /*text-align:center;*/
 }
+
 .float-left{
     float:left;	/* use this on an element (like an image) to make it float to the left of it's containing HTML element */
 }
@@ -124,6 +125,7 @@ div#footer{
 
     div#footer{
         padding:0.5em 0;
+        text-align:center;
     }
 
 }
@@ -165,6 +167,8 @@ div#footer{
     div#footer{
         padding:15px;
         width:900px;
+        overflow: hidden;
+        text-align: center;
     }
 
     .float-left{
@@ -179,6 +183,28 @@ div#footer{
         font-size: 11px; /* this makes all anchor classes with .list applied 11px tall  */
     }
 
+
+     /*Extra credit footer animation */
+
+    #footer p {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        animation-name: bounce;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+    }
+
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateX(15%);
+        }
+        50% {
+            transform: translateX(45%);
+        }
+    }
 
 }
 

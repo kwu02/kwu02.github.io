@@ -199,10 +199,10 @@ div#footer{
 
     @keyframes bounce {
         0%, 100% {
-            transform: translateX(15%);
+            transform: translateX(10%);
         }
         50% {
-            transform: translateX(45%);
+            transform: translateX(50%);
         }
     }
 

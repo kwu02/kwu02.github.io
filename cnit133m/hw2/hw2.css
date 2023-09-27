@@ -94,7 +94,7 @@ div#footer{
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:820px) {
     body, div.sidebar-left, div.col-right, div#footer {
         width: 100%;
         box-sizing: border-box;
@@ -131,7 +131,7 @@ div#footer{
 }
 
 
-@media screen and (min-width:601px) {
+@media screen and (min-width:821px) {
     body {
         font-size:13px;
     }

@@ -28,7 +28,6 @@ div#header{
 
 ul.navigation {
     list-style:none;	/* this removes the bullets from list elements */
-
 }
 
 ul.navigation li a{
@@ -58,9 +57,9 @@ div.sidebar-left a{
     color:#445e64;	/* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
 }
 
-div.sidebar-left a:hover{
-    text-decoration:none
-}	/* when hovering over a link, in the sidebar, this turns off the underline */
+/*div.sidebar-left a:hover{*/
+/*    text-decoration:none*/
+/*}	!* when hovering over a link, in the sidebar, this turns off the underline *!*/
 
 .list{
     border-bottom:1px solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
@@ -164,6 +163,10 @@ div#footer{
         width:200px;
     }
 
+    div.sidebar-left a:hover{
+        text-decoration:none
+    }	/* when hovering over a link, in the sidebar, this turns off the underline */
+
     div#footer{
         padding:15px;
         width:900px;
@@ -185,9 +188,8 @@ div#footer{
 
 
      /*Extra credit footer animation */
-
     #footer p {
-        width: 100%;
+        /*width: 100%;*/
         text-align: left;
         position: relative;
         animation-name: bounce;
@@ -195,7 +197,6 @@ div#footer{
         animation-iteration-count: infinite;
         overflow: hidden;
     }
-
 
     @keyframes bounce {
         0%, 100% {
@@ -205,6 +206,16 @@ div#footer{
             transform: translateX(50%);
         }
     }
+
+
+
+    @media (pointer:coarse) {
+         div.sidebar-left a {
+            color: red;
+        }
+
+    }
+
 
 }
 

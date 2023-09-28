@@ -39,11 +39,6 @@ ul.navigation li a{
     text-decoration:none; /* this removes the normal underline that links usually have */
 }
 
-ul.navigation li a:hover{
-    background-color:#000; /*this is a hover pseudo class.  By designating a different background color, than the class for the a tag above, when a mouse hovers over these particular links, in the navigation bar, the background color will change to what's defined here */
-
-}
-
 div.col-right{
     float:right;
 }
@@ -57,10 +52,6 @@ div.sidebar-left a{
     color:#445e64;	/* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
 }
 
-/*div.sidebar-left a:hover{*/
-/*    text-decoration:none*/
-/*}	!* when hovering over a link, in the sidebar, this turns off the underline *!*/
-
 .list{
     border-bottom:1px solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
     padding:0 0 20px 15px;	/* adds spacing to the bottom of the list to further divide the content for eaier segragation */
@@ -69,6 +60,7 @@ div.sidebar-left a{
 .list li{
     margin-bottom:10px
 }
+
 .list li a{
     font-weight:bold;	/* this makes all anchor classes with .list bold without using <strong>  */
     text-transform:uppercase;	/* this makes all anchor classes with .list uppercase  */
@@ -92,8 +84,7 @@ div#footer{
     clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }
 
-
-@media screen and (max-width:820px) {
+@media screen and (max-width:820px) and (pointer: coarse) {
     body, div.sidebar-left, div.col-right, div#footer {
         width: 100%;
         box-sizing: border-box;
@@ -127,6 +118,27 @@ div#footer{
         text-align:center;
     }
 
+    /*Extra credit for change the pseudo-class you see in the CSS for the :hover  */
+    ul.navigation li a{
+        animation: change-background 4s ease infinite;
+    }
+
+    @keyframes change-background {
+        0% { background: #69b7eb; }
+        50% { background: #b3dbd3; }
+        100% { background: #f4d6db; }
+    }
+
+    div.sidebar-left a {
+        animation: color-change 1s infinite;
+    }
+
+    /* Define the keyframes outside of the media query */
+    @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
 }
 
 
@@ -152,6 +164,10 @@ div#footer{
     ul.navigation li{
         display:inline-block; /* an inline block element can have width and height applied to it / and if not, they only take up as much space as the content within allows */
         margin:0 3px 5px;	/* this code adds a 3px margin to the left and right of the list elements, and 5px to the bottom of the list elements */
+    }
+
+    ul.navigation li a:hover{
+        background-color:#000; /*this is a hover pseudo class.  By designating a different background color, than the class for the a tag above, when a mouse hovers over these particular links, in the navigation bar, the background color will change to what's defined here */
     }
 
     div.col-right {
@@ -189,7 +205,6 @@ div#footer{
 
      /*Extra credit footer animation */
     #footer p {
-        /*width: 100%;*/
         text-align: left;
         position: relative;
         animation-name: bounce;
@@ -207,14 +222,6 @@ div#footer{
         }
     }
 
-
-
-    @media (pointer:coarse) {
-         div.sidebar-left a {
-            color: red;
-        }
-
-    }
 
 
 }

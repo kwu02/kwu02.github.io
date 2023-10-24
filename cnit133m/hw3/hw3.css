@@ -8,3 +8,23 @@ main, footer {
     font-size: small;
     font-weight: lighter;
 }
+
+img {
+    border: 0.1rem solid #ddd;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+}
+
+.accordion > .btn {
+    color: black;
+    font-size: x-large;
+}
+
+/*.content {*/
+/*    display: flex;*/
+/*    flex-direction: column; !* Stack children vertically *!*/
+/*    justify-content: center; !* Center vertically *!*/
+/*    align-items: center; !* Center horizontally *!*/
+/*    text-align: center; !* Center text within the container *!*/
+/*    !*height: 100vh; !* Set the container's height to 100% of the viewport height *!*!*/
+/*}*/

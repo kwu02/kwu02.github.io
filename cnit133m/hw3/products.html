@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>ABC Toys</title>
+    <meta charset="UTF-8">
+    <title>ABC Toys - Products Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -11,9 +11,18 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="hw3.css">
 
-</head>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">-->
+<!--    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.js"></script>-->
+<!--    <script>-->
+<!--        $(document).ready(function(){-->
+<!--            $('.ui.accordion').accordion();-->
+<!--        });-->
+<!--    </script>-->
+
 <body>
-    <div class="container-fluid">
+    <div class="w-100">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="index.html">ABC Toys</a> <!-- for the logo or name of the company -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapsed">
@@ -60,8 +69,84 @@
         </nav>
 
         <main>
-        <p>products works!</p>
 
+
+            <div class="accordion" id="accordionGroup">
+                            <button class="btn btn-link btn-lg" type="button" data-toggle="collapse" data-target="#contentGroup" aria-expanded="true" aria-controls="contentGroup">
+                                Our Toys
+                            </button>
+                    <div id="contentGroup" class="collapse show" aria-labelledby="headingGroup">
+                        <div class="card-body">
+
+                            <div class="card">
+                                <div class="card-header" id="heading1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-lg" type="button" data-toggle="collapse" data-target="#content1" aria-expanded="true" aria-controls="content1">
+                                            Optimus Prime Action Figure
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="content1" class="collapse" aria-labelledby="heading1">
+                                    <div class="card-body row">
+                                        <figure class="col-sm-2">
+                                            <img src="./imgs/optimus_prime.png" class="img-fluid" alt="Optimus Prime Action Figure 11-inch">
+                                        </figure>
+                                        <article class="col-sm-6">
+                                            <p>Imagine joining the epic battle between the heroic Autobots and the evil Decepticons with authentic Transformers figures.
+                                                Experience larger-than-life characters in a large 11-inch scale, like the legendary Autobot leader, Optimus Prime!</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="heading2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-lg" type="button" data-toggle="collapse" data-target="#content2" aria-expanded="false" aria-controls="content2">
+                                            X-Wing Jedi Figure
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="content2" class="collapse" aria-labelledby="heading2">
+                                    <div class="card-body row">
+                                        <figure class="col-sm-2">
+                                            <img src="./imgs/x_wing.png" class="img-fluid" alt="X-Wing Jedi Search & Rescue 2.5-Inch-Scale Figure">
+                                        </figure>
+                                        <article class="col-sm-6">
+                                            <p>Luke Skywalker was a Tatooine farmboy who rose from humble beginnings to become one of the greatest Jedi the galaxy has ever known.
+                                                Blast off into galactic action and adventure with the Star Wars Mission Fleet figures and vehicles! These fun figures and vehicles
+                                                allow kids to imagine action-packed battles between the dark side and the light side of the Force. Star Wars Mission Fleet toys are
+                                                kid-friendly and make a great introduction to the galaxy of Star Wars for boys and girls ages 4 and up!</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="heading3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-lg" type="button" data-toggle="collapse" data-target="#content3" aria-expanded="false" aria-controls="content3">
+                                            RC Tyrannosaurus
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="content3" class="collapse" aria-labelledby="heading3">
+                                    <div class="card-body row">
+                                        <figure class="col-sm-2">
+                                            <img src="./imgs/Dinosaur.png" class="img-fluid" alt="RC Tyrannosaurus rex Dinosaur Toys with Lights and Music">
+                                        </figure>
+                                        <article class="col-sm-6">
+                                            <p>Dinosaur Toys, RC Tyrannosaurus rex Dinosaur Toys with Lights and Music, Auto-Demo and Spray Functions, Gift for Girls and Boys 3 Years Old and Up.
+                                                Made of high quality ABS material ensure the dinosaur toy safe and tough which make you and your kids playing them in a safe condition.
+                                                The final sample has experinced thousands of falling down test so you don't have worry it will break suddenly.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
         </main>
 

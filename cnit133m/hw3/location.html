@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>ABC Toys</title>
+    <meta charset="UTF-8">
+    <title>ABC Toys - Location Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--    https://kwu02.github.io/cnit133m/hw3/index.html-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,9 +12,22 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="hw3.css">
 
+    <script src="https://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+          integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+
+    <script src="leafletMap.js"></script>
+
 </head>
+
 <body>
-    <div class="container-fluid">
+    <div class="w-100">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="index.html">ABC Toys</a> <!-- for the logo or name of the company -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapsed">
@@ -61,8 +74,12 @@
         </nav>
 
         <main>
-            <p>location works!</p>
+            <div class="container mt-auto">
+                <p>Your current location:</p>
+                <p id="result"></p>
 
+                <div id="map" style="width: 70%; height: 50vw;"></div>
+            </div>
 
         </main>
 

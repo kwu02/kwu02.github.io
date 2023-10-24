@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>ABC Toys</title>
+    <meta charset="UTF-8">
+    <title>ABC Toys - Extra Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="w-100">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="index.html">ABC Toys</a> <!-- for the logo or name of the company -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapsed">
@@ -60,7 +60,35 @@
         </nav>
 
         <main>
-            <p>extra works!</p>
+            <div class="container-fluid mt-4">
+
+                <h2>WURFL Capabilities</h2>
+                <p>Here are some capabilities offered by WURFL database that worth noting:</p>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Usage</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>device_orientation</td>
+                        <td>Detect the device's orientation (portrait or landscape) to adjust content and layout accordingly.</td>
+
+                    </tr>
+                    <tr>
+                        <td>is_touchscreen</td>
+                        <td>Identify touchscreen devices to offer touch-friendly interactions and navigation</td>
+
+                    </tr>
+                    <tr>
+                        <td>is_mobile</td>
+                        <td>Detect if a device is a mobile phone. This capability can be used to determine whether to deliver a mobile-optimized version of a website or application.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
 
         </main>

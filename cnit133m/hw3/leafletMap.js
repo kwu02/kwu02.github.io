@@ -14,7 +14,9 @@
                 msg = `Latitude: ${lat}, longitude: ${lng}`;
                 document.getElementById("result").innerHTML = msg;
 
-                const map = L.map('map').setView([lat, lng], 30); // Set the initial center and zoom level
+                // const map = L.map('map').setView([lat, lng], 30); // Set the initial center and zoom level
+
+                const map = L.map('map');
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 19, // Maximum zoom level

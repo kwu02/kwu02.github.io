@@ -21,7 +21,7 @@
                 }).addTo(map);
 
                 const marker = L.marker([lat, lng]).addTo(map);
-                map.panTo(new L.LatLng(lat, lng));
+                // map.panTo(new L.LatLng(lat, lng));
                 marker.bindPopup('Your current location on map').openPopup();
 
             },

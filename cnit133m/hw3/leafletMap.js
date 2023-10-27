@@ -14,14 +14,19 @@
                 msg = `Latitude: ${lat}, longitude: ${lng}`;
                 document.getElementById("result").innerHTML = msg;
 
-                const map = L.map('map').setView([lat, lng], 30); // Set the initial center and zoom level
+                // const map = L.map('map').setView([lat, lng], 30); // Set the initial center and zoom level
+                 const map = L.map('map').setView([37.7274676, -122.4560389], 30); // Set the initial center and zoom level
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 19, // Maximum zoom level
                 }).addTo(map);
 
-                const marker = L.marker([lat, lng]).addTo(map);
-                // map.panTo(new L.LatLng(lat, lng));
+                // const marker = L.marker([lat, lng]).addTo(map);
+                // // map.panTo(new L.LatLng(lat, lng));
+                // marker.bindPopup('Your current location on map').openPopup();
+
+                                const marker = L.marker([37.7274676, -122.4560389]).addTo(map);
+                // map.panTo(new L.LatLng(37.7274676, -122.4560389));
                 marker.bindPopup('Your current location on map').openPopup();
 
             },

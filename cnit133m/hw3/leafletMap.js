@@ -11,7 +11,7 @@
                 const lng = position.coords.longitude;
 
                 // Update the map with the user's new location
-                msg = `Latitude: ${lat}, longitude: ${lng}`;
+                msg = `Latitude: ${lat}<br> Longitude: ${lng}`;
                 document.getElementById("result").innerHTML = msg;
 
                 const map = L.map('map').setView([lat, lng], 30); // Set the initial center and zoom level

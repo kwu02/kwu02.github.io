@@ -7,10 +7,10 @@
             // Success callback function
             function(position) {
                 // Get the user's latitude and longitude coordinates
-                // const lat = position.coords.latitude;
-                // const lng = position.coords.longitude;
-                                const lat = 37.7274676;
-                const lng = position.-122.4560389;
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+                //                 const lat = 37.7274676;
+                // const lng = position.-122.4560389;
 
                 // Update the map with the user's new location
                 msg = `Latitude: ${lat}, longitude: ${lng}`;

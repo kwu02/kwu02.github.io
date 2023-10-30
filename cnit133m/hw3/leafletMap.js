@@ -17,6 +17,7 @@
                 const map = L.map('map').setView([lat, lng], 30); // Set the initial center and zoom level
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy ABC Toys - Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     maxZoom: 19, // Maximum zoom level
                 }).addTo(map);
 

@@ -6,7 +6,7 @@ var CACHE_FILES = [
     'pwa-192.png',
     'pwa-512.png',
     'hw4.js',
-    'styles.css',
+    'hw4.css',
     'lightblue.jpg',
     'lightgold.jpg'
 ];

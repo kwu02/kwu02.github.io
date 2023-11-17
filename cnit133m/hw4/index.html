@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>CNIT 133M - Homework 4</title>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="stylesheet" href="hw4.css">
+
+</head>
+
+<body>
+
+<main>
+    <article>
+        <h1>Main characteristics of a PWA (Progressive Web Application)</h1>
+        <p>A PWA excels in <strong>responsiveness</strong>, ensuring a seamless user experience across diverse devices.
+        responsive design principles enable a PWA to adapt dynamically to different screen sizes,
+        eliminating the need for separate development for various platforms. This versatility enables
+        users to access the web application from any device with a web browser.</p>
+        <p>A PWA provides an <strong>app-like experience</strong> within web browsers, incorporating smooth animations and
+        gestures reminiscent of native application. This design choice enhances user engagement and blurs
+        the distinction between web and native mobile apps. Users can add the PWA to their home screens,
+        further enhancing the immersive and enjoyable interaction.</p>
+        <p><strong>Discoverability</strong> is a key strength of a PWA. Unlike traditional apps replying on app stores, A PWA
+        is easily found through search engines. This characteristic that paired with the ability to share a
+        PWA via URL facilitates user acquisition. Users can distribute the PWA through social media, email,
+        or messaging apps.</p>
+    </article>
+    <br><br>
+    <form>
+        <label For="backgroundSelector">Select a background image:</label>
+        <select id="backgroundSelector" onchange="changeBackground()">
+            <option value="lightblue.jpg">Lightblue</option>
+            <option value="lightgold.jpg">Lightgold</option>
+        </select>
+    </form>
+</main>
+</body>
+    <script>
+        function changeBackground() {
+            var select = document.getElementById("backgroundSelector");
+            var selectedImage = select.options[select.selectedIndex].value;
+            document.body.style.backgroundImage = "url('" + selectedImage + "')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+    </script>
+    <script src="hw4.js"></script>
+</html>

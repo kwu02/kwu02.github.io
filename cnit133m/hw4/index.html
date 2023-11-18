@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CNIT 133M - Homework 4</title>
-    <link rel="manifest" href="manifest.json"/>
+    <link rel="manifest" href="/manifest.json"/>
     <link rel="stylesheet" href="hw4.css">
-
+    <script src="hw4.js" defer></script>
 </head>
 
 <body>
@@ -36,16 +36,21 @@
             <option value="lightgold.jpg">Lightgold</option>
         </select>
     </form>
+
+    <br><br>
+    <h3>PWA extra credit of local storage</h3>
+    <br>
+    <form>
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="username">
+    </form>
+
+    <br>
+    <div id="display" class="displayDiv">
+        
+    </div>
 </main>
+
 </body>
-    <script>
-        function changeBackground() {
-            var select = document.getElementById("backgroundSelector");
-            var selectedImage = select.options[select.selectedIndex].value;
-            document.body.style.backgroundImage = "url('" + selectedImage + "')";
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "cover";
-        }
-    </script>
-    <script src="hw4.js"></script>
+    
 </html>

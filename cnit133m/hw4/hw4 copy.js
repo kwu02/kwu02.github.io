@@ -8,43 +8,55 @@ if (navigator.serviceWorker) {
   console.log('Service Worker is not supported in this browser.')
 }
 
-// function to change background image
-const changeBackground = () => {
+
+function changeBackground() {
   var select = document.getElementById("backgroundSelector");
   var selectedImage = select.options[select.selectedIndex].value;
-  document.body.style.backgroundImage = `url('${selectedImage}')`;
+  document.body.style.backgroundImage = "url('" + selectedImage + "')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
-};
+}
 
 
 /* extra credit of local storage starts here */
-
-const saveName = () => {
+    // Function to save name to local storage
+    function saveName() {
       var nameInput = document.getElementById('name');
       var name = nameInput.value;
 
+      // Check if name is not empty
       if (name.trim() !== '') {
+          // Save the name to local storage
           localStorage.setItem('username', name);
 
+          // Display the name in the div
           displayStoredName();
       }
-  };
+  }
 
- const displayStoredName = () => {
+  // Function to display stored name
+  function displayStoredName() {
+      // var displayDiv = document.getElementById('display');
       var storedName = localStorage.getItem('username');
+
+      // // Check if a name is stored
+      // if (storedName) {
+      //     displayDiv.textContent = `Hello, ${storedName}, glad to see you back!`
+      // } else {
+      //     displayDiv.textContent = ''; // Clear the display if no name is stored
+      // }
       if(storedName) {
         document.getElementById("display").innerHTML = `Hello, ${storedName}, glad to see you back!`;
+        
       } else {
         document.getElementById("display").innerHTML = '';
       }
-  };
+  }
 
-
-  document.getElementById('name').addEventListener('blur', () => {
-    saveName();
+  // Add event listener to the input for saving the name when the cursor leaves
+  document.getElementById('name').addEventListener('blur', function () {
+      saveName();
   });
-  
 
   // Initial display when the page loads
   displayStoredName();

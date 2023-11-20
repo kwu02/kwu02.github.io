@@ -11,11 +11,13 @@ if (navigator.serviceWorker) {
 // function to change background image
 const changeBackground = () => {
   var select = document.getElementById("backgroundSelector");
-  var selectedImage = select.options[select.selectedIndex].value;
-  document.body.style.backgroundImage = `url('${selectedImage}')`;
-  document.body.style.backgroundRepeat = "no-repeat";
-  document.body.style.backgroundSize = "cover";
-};
+  if(select.options[select.selectedIndex].value !== "") {
+    var selectedImage = select.options[select.selectedIndex].value;
+    document.body.style.backgroundImage = `url('${selectedImage}')`;
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+  }
+}
 
 
 /* extra credit of local storage starts here */

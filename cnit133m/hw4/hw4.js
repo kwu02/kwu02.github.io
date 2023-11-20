@@ -18,7 +18,7 @@ const changeBackground = () => {
     document.body.style.backgroundSize = "cover";
   } else {
     document.body.style.backgroundImage = "";
-    document.body.style.color = #ffffff;
+    document.body.style.color = "#ffffff";
   }
 }
 

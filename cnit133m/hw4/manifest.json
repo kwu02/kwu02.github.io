@@ -33,5 +33,19 @@
     "src": "service-worker.js",
     "scope": "/",
     "type": "classic"
-  }
+  },
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "390x840",
+      "type": "image/png"
+ 
+    }
+  ]
 }

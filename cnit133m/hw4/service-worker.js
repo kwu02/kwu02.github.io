@@ -8,9 +8,7 @@ var CACHE_FILES = [
     'hw4.js',
     'hw4.css',
     'lightblue.jpg',
-    'lightgold.jpg',
-    'screenshot-mobile',
-    'screenshot-wide'
+    'lightgold.jpg'
 ];
 
 self.addEventListener('install', event => {

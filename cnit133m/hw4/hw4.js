@@ -16,8 +16,12 @@ const changeBackground = () => {
     document.body.style.backgroundImage = `url('${selectedImage}')`;
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
+  } else {
+    document.body.style.backgroundImage = "";
+    document.body.style.color = white;
   }
 }
+
 
 
 /* extra credit of local storage starts here */

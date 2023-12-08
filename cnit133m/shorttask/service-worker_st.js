@@ -3,6 +3,7 @@ var CACHE_FILES = [
     'shorttask.html',
     './',
     'shorttask.css',
+    'shorttask.js',
     'pwa-48.png',
     'pwa-192.png',
     'pwa-512.png',

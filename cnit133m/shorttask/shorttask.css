@@ -1,0 +1,42 @@
+body {
+    background-color: #dfebe8;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: table;
+}
+
+@media (max-width: 800px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
+@media print {
+    a {
+        color: inherit; /* Use the default text color for printing */
+        text-decoration: none; /* Remove underline for printing */
+    }
+
+    a::after {
+        content: " (" attr(href) ")"; /* Show URL in parentheses */
+        font-size: 80%;
+        color: #777;
+    }
+
+}
+

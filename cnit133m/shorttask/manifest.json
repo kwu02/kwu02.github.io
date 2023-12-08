@@ -1,0 +1,21 @@
+{
+  "short_name": "My Short Task",
+  "name": "Short Task",
+  "description": "Comparison of Hybrid Application Solutions",
+  "lang": "en-US",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+
+  "start_url": ".",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "permissions": [],
+  "serviceworker": {
+    "src": "service-worker.js",
+    "scope": "/",
+    "type": "classic"
+  }
+}

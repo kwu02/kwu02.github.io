@@ -1,6 +1,7 @@
 var CACHE_VERSION = 'stsw-v1';
 var CACHE_FILES = [
     'shorttask.html',
+    './',
     'shorttask.css',
     'pwa-48.png',
     'pwa-192.png',

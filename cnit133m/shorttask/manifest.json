@@ -30,7 +30,7 @@
   "related_applications": [],
   "permissions": [],
   "serviceworker": {
-    "src": "service-worker.js",
+    "src": "service-worker_st.js",
     "scope": "/",
     "type": "classic"
   }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service & Wash App</title>
+    <link rel="icon" type="image/png" href="images01/Cars.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="CarStyles/globo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton/Open+Sans" rel="stylesheet">
+</head>
+<body>
+<header id="promo" class="container-fluid">
+    <div class="slogan">Your car will look brand new</div>
+    <div style="display:none;">Hand car wash and detail</div>
+    <div style="display:none;">Professional car repair</div>
+    <div style="display:none;">Same day dispatch</div>
+</header>
+<nav id="topMenu" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="/">Car Service & Wash</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="wrap container-fluid">
+    <div id="banner" class="text-center mt-3">
+        <h1 class="logo">Car Service & Wash</h1>
+    </div>
+    <div id="action" class="text-center">
+        <a href="/Services" class="btn btn-primary">Click for services provided</a>
+    </div>
+
+    <div class="clear spacer v80"></div>
+
+    <div id="CarWashFeature" class="feature row">
+        <div class="col-md-6">
+            <div class="text">
+                <h2>YOU WILL LIKE OUR WASH PRODUCTS</h2>
+                <div class="subheading">THE WIDEST RANGE OF DETAILING PRODUCTS</div>
+                <hr>
+                <p>We will repair your vehicle and wash it while you wait in our cafeteria</p>
+                <a href="#" class="btn btn-primary">CLICK FOR WASH PRODUCTS</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="Images01/auto-detailing_feature_1.jpeg" alt="auto-detailing_feature_1" class="img-fluid" style="border: 10px solid  hsl(321, 57%, 91%);">
+        </div>
+    </div>
+    <div class="clear spacer v20"></div>
+
+    <div id="detailImage" class="middleImage">
+        <img src="Images01/auto-detailing_feature_2.jpeg" alt="auto-detailing_feature_2" class="img-fluid" style="border: 10px solid  hsl(321, 57%, 91%);">
+    </div>
+    <div class="spacer v80"></div>
+
+    <div id="carServiceFeature" class="feature row">
+        <div class="col-md-6">
+            <div class="text">
+                <h2>Well serviced cars</h2>
+                <div class="subheading">EVERYTHING YOUR CAR NEEDS</div>
+                <hr>
+                <p>Make sure your car runs good with our services</p>
+                <a href="#" class="btn btn-primary">CLICK FOR CAR SERVICE</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="Images01/carService_feature_1.jpeg" alt="carService_feature_1" class="img-fluid" style="border: 10px solid  hsl(321, 57%, 91%);">
+        </div>
+    </div>
+
+    <div class="spacer v80"></div>
+
+    <section id="contactUs" class="feature row">
+        <div class="col-md-6">
+            <div class="text">
+                <h2>CONTACT US</h2>
+                <hr>
+                <p>TEL : 415-566-2356 <br> EMAIL</p>
+                <p><a href="mailto:info@Unique%20Car%20Repair%20and%20Wash%20Services.com" class="emailLink">info@Unique&nbsp;Car&nbsp;Repair&nbsp;and&nbsp;Wash&nbsp;Services</a></p>
+                <p>Unique Car Repair and Wash Services<br> Address: 100 Miramar St. San Francisco, CA 94110</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Google Maps iframe or any other content -->
+        </div>
+    </section>
+
+    <div class="clear spacer v80"></div>
+
+    <section id="subscribe">
+        <h2 class="text-center">SUBSCRIBE TO OUR MAILING LIST</h2>
+        <form action="/subscribe" method="post">
+            <div class="form-row justify-content-center">
+<!--            <div class="col-md-6">-->
+                <div>
+                    <input type="text" class="form-control mb-2" name="email" placeholder="Enter your email address">
+                </div>
+<!--           <div class="column-auto">-->
+               <div>
+                    <button type="submit" class="btn btn-secondary btn-block mb-2">Join Now</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer id="footer" class="text-center">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="/storeFinder">Store Finder</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="/shipping">Shipping</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="/FAQ">FAQ</a>
+            </li>
+        </ul>
+    </footer>
+</section>
+
+<div id="copyright" class="text-center">
+    <small>&copy;2024 <span class="logo">Unique Car Repair and Wash Services</span></small>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

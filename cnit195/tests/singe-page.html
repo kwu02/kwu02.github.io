@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<!-- Name: Keli Wu; Date: 08/30/2023  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CNIT certificates and courses">
+    <title>JavaScript Libs/Frameworks - Homework jQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        /*.hidden {*/
+        /*    display: none;*/
+        /*}*/
+
+        .footer {
+            height: 35rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="w-100">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Navigation links will be added dynamically -->
+            </ul>
+
+            <div id="social">
+                <a href="https://www.facebook.com/ABCToys" target="_blank">
+                    <!--                                <img src="facebook-logo.png" alt="Facebook" width="30" height="30">-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" fill="gray" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/ABCToys" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" fill="gray" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+<!--</header>-->
+
+
+<main class="content">
+
+<!--    <h1>Computer Networking and Information Technology</h1>-->
+
+    <div id="home" class="certificate">
+        <h2>Home</h2>
+        <p>This is the index page for the testing</p>
+    </div>
+
+    <div id="beginning-web-development-certificate" class="certificate hidden">
+
+        <h2>Beginning Web Development Certificate</h2>
+
+        <h3>CNIT 131H</h3>
+
+        <p>Introduction to HTML &amp; CSS – a light introduction course to HTML and inline CSS that is completed in 6 weeks. This course cannot be used to substitute CNIT 131 for AS Degree, only certificates. HTML, CSS and FTP will be learned.</p>
+
+        <h3>CNIT 131</h3>
+
+        <p>Internet and Beginning HTML – this is a semester-long course and you will learn about browsers, wired and wireless network, network security, etc. This course is part of the core courses required for AS Degree in CNIT. </p>
+
+        <h3>CNIT 132:</h3>
+
+        <p>Intermediate HTML &amp; CSS – this course contains intermediate techniques of HTML and CSS including principles of Responsive Web Design, CSS animation, etc. </p>
+
+    </div>
+
+    <div id="advanced-web-development-certificate" class="certificate hidden">
+
+        <h2>Advanced Web Development Certificate</h2>
+
+        <h3>CNIT 133</h3>
+
+        <p>JavaScript, jQuery, AXAX – this course starts with the basics of JavaScript up to more advanced techniques and will introduce jQuery and AJAX.</p>
+
+        <h3>CNIT 134</h3>
+
+        <p>Server-Side Technologies: ASP.NET – The use of ASP.NET techniques to create dynamic, server-side web pages. Using MS Visual Studio. </p>
+
+    </div>
+
+
+    <div id="optional-for-web-development-certificate" class="certificate hidden">
+
+        <h2>Optional for Web Development Certificate</h2>
+
+        <h3>CNIT 129</h3>
+
+        <p>Web 2.0 Technologies – the study and use of different web 2.0 technologies and their integration within web pages. Students will develop blogs, social media pages, social bookmarking, maps, etc. </p>
+
+        <h3>CNIT 131A</h3>
+
+        <p>XML &amp; JSON – Introduction to XML, the use of XML to transfer data across different platforms; XSLT, CSS to style XML data. Introduction to JSON. </p>
+
+    </div>
+
+    <div id="other-certificates" class="certificate hidden">
+
+        <h2>Other Certificates</h2>
+
+        <h3>Cybersecurity</h3>
+
+        <p>For students interested in the network security area. </p>
+
+        <h3>Advanced Cybersecurity</h3>
+
+        <p>This certificate includes more advanced topics in the area of network security. Students will be ready to take some well-known industry exams in the area of network security. </p>
+
+        <h3>Computer Technical Support</h3>
+
+        <p>This certificate prepares students for the job positions of technical support and even with some basis of help desk or technical service management. </p>
+
+        <h3>Wireless Networking</h3>
+
+        <p>Students will be able to plan, install, and maintain wireless networks applying some basic principles of network security. </p>
+
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Create an empty ul element to hold the list items
+        var ul = $("<ul>");
+
+        // Add class to the ul element
+        ul.addClass("navbar-nav mr-auto");
+
+        // Iterate each certificate section and convert them to list items
+        $(".certificate").each(function() {
+
+            // Get the certificate section ID
+            var certId = $(this).attr('id');
+
+            // Create a name of the certificate from h2
+            var certName = $(this).find("h2").text();
+
+            // Create an li element with html markup of the certificate anchor tag
+            var li = $("<li>").addClass("nav-item").html('<a class="nav-link" href="#' + certId + '">' + certName + '</a>');
+
+            // Append the li to the ul
+            ul.append(li);
+        });
+
+        // Insert the ul element after the h1 element inside the <main> with the class "content".
+        $(".navbar-nav").append(ul);
+
+        // Add click event listener to navigation links
+        $(".nav-link").on('click', function(event) {
+            event.preventDefault();
+
+            // Get the target certificate section ID from the link href
+            var targetId = $(this).attr('href').substring(1);
+
+            // Hide all certificate sections
+            $(".certificate").addClass('hidden');
+
+            // Show the selected certificate section
+            $("#" + targetId).removeClass('hidden');
+
+            // Smooth scrolling to the selected certificate section
+            $('html, body').animate({
+                scrollTop: $("#" + targetId).offset().top - 70 // Adjusted for the height of the fixed header
+            }, 1000);
+        });
+
+        // Show the home section by default
+        // $("#home").removeClass('hidden');
+    });
+</script>
+
+    <footer class="mt-4 text-left footer">
+        <p>&copy; 2023 ABC Toys. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
 

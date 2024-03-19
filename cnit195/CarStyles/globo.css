@@ -182,6 +182,17 @@ h2 {
     width: 31rem;
 }
 
+.form {
+    background-color: #F46036;
+    padding:1rem;
+    color: white;
+}
+
+.form button {
+    color: white;
+    background-color: #4392F1;
+}
+
 /* Contact map */
 .contactMap {
     width: 100%;

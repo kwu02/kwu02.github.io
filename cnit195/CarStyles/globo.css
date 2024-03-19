@@ -193,10 +193,8 @@ h2 {
     background-color: #4392F1;
 }
 
-/* Contact map */
-.contactMap {
-    width: 100%;
-    height: 25rem;
+iframe {
+    padding: 0.5rem;
 }
 
 /* Subscribe section */
